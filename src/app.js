@@ -4,7 +4,7 @@ const app = express();
 
 // Endpoint de health check: usado para verificar se a aplicação está no ar
 app.get('/health', (req, res) => {
-  res.status(200).json({ status: variavelNaoDeclarada });
+  res.status(200).json({ status: 'ok' });
 });
 
 // Só inicia o servidor de fato quando o arquivo é executado diretamente
